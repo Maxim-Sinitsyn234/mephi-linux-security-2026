@@ -1,0 +1,153 @@
+wsl -d Ubuntu-24.04
+wsl.exe -d Ubuntu-24.04
+uname -a
+whoami
+clear
+man useradd
+passwd
+ls -al
+cd ~
+ls -al
+ps -aux
+ps -u root -o ruser,euser,pid,args
+ps -u root -o ruser,euser,pid,args --no-headers | grep -v '^root' | tee ~/mephi-linux-security-2026/euid_processes.out
+ps -u root -o ruser,euser --no-headers | sort | uniq -c
+id
+man ps
+man man
+ps -ax
+mkdir -p ~/mephi-linux-security-2026
+pwd
+ls -al
+cd ~/mephi-linux-security-2026/
+pwd
+cd ../
+pwd
+cd ./mephi-linux-security-2026/
+whoami
+id
+lsb_release -d
+command -v useradd usermod chage find ps setcap getcap visudo stat
+ps -p 1 -o comm=
+getent passwd 1234
+getent passwd user1
+getent group students
+sudo groupadd students
+getent group students
+sudo useradd -u 1234 -g students -m -s /bin/bash user1
+getent passwd user1
+passwd user1
+sudo passwd user1
+sudo chage -M 90 user1
+id user1
+getent passwd user1
+getent group students
+chage -l user1
+sudo chage -l user1
+stat /home/user1
+/clear
+clear
+sudo find / -xdev -perm -4000 -type f 2>/dev/null | sort > ~/mephi-linux-security-2026/suid_files.out
+ls -al
+nano suid_files.out 
+cat ./suid_files.out 
+ls -al
+ls -l /usr/bin/sudo /usr/bin/passwd /usr/bin/mount
+ps -u root -o pid,ruser,euser,args
+ps aux | grep passwd
+ps -u root -o pid,ruser,euser,args > ~/mephi-linux-security-2026/euid_processes.out
+ps -u root -o pid,ruser,euser,args --no-headers | grep maksy | tee -a ~/mephi-linux-security-2026/euid_processes.out
+cat ./euid_processes.out 
+history -a
+clear
+ls -l /etc/shadow
+cat /etc/shadow
+cp /bin/cat ~/mycat
+sudo chown root:root ~/mycat
+sudo chmod u+s ~/mycat
+ls -l ~/mycat
+stat ~/mycat
+cat /etc/shadow 
+~/mycat /etc/shadow
+~/mycat /etc/shadow | head -3
+ps -ax
+pwd
+cd ~
+pwd
+cd /
+ls -al
+ps -ax
+ps -ax | grep systemd
+cd ~
+ls -al
+cd mephi-linux-security-2026/
+ls -al
+cat suid_files.out 
+clear
+cat suid_files.out | grep sudo
+cat suid_files.out
+grep sudo
+ps -ax && ls -al
+ps
+ps -a
+ps -ax
+man ps
+du -f
+df -u
+df -h
+clear
+touch /tmp/hw_test
+ls -l /tmp/hw_test
+chown root:root /tmp/hw_test
+chown
+ls -al
+which chown
+which man
+cp /usr/bin/chown ~/mychown
+cd ~
+ls -al
+sudo setcap cap_chown+ep ~/mychown
+getcap ~/mychown
+ls -l ~/mychown
+ls -l /tmp/hw_test
+~/mychown root:root /tmp/hw_test
+ls -l /tmp/hw_test
+clear
+sudo visudo -f /etc/sudoers.d/user1-time
+sudo visudo -c
+sudo chmod 440 /etc/sudoers.d/user1-time
+ls -l /etc/sudoers.d/user1-time
+sudo visudo -c
+sudo ls -l /etc/sudoers.d/
+sudo -l -U user1
+su - user1
+history -a
+echo "684036"
+ls -al
+history -a
+echo "684036"
+ls -l /mnt/c/Users/maksy/Documents/mephi-screenshot.png
+ls -al
+cd Documents/
+ls -al
+cp ./mephi_screenshot.png ~/mephi-linux-security-2026/
+cd ~/mephi-linux-security-2026
+ls -al
+clear
+ls -l ~/mephi-linux-security-2026
+head -2 ~/mephi-linux-security-2026/shadow
+tail -5 ~/mephi-linux-security-2026/history.out
+grep -c date history.out
+cd ../
+ls -al
+history -a
+whoami
+clear
+whoami
+id
+date
+sudo date -s "2026-09-21 12:00:00"
+date
+sudo -l
+учше
+exit

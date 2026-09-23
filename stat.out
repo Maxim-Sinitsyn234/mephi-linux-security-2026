@@ -1,0 +1,24 @@
+  File: /home/user1
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,48	Inode: 49310       Links: 3
+Access: (0750/drwxr-x---)  Uid: ( 1234/   user1)   Gid: ( 1001/students)
+Access: 2026-09-21 13:26:53.563172088 +0300
+Modify: 2026-09-23 13:17:28.983171304 +0300
+Change: 2026-09-23 13:17:28.983171304 +0300
+ Birth: 2026-09-21 13:11:02.701129854 +0300
+  File: /home/maksy/mycat
+  Size: 39384     	Blocks: 80         IO Block: 4096   regular file
+Device: 8,48	Inode: 49342       Links: 1
+Access: (4755/-rwsr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2026-09-21 14:06:05.133452139 +0300
+Modify: 2026-09-21 14:03:10.159690529 +0300
+Change: 2026-09-21 14:03:38.794559645 +0300
+ Birth: 2026-09-21 14:03:10.159416549 +0300
+  File: /home/maksy/mychown
+  Size: 59912     	Blocks: 120        IO Block: 4096   regular file
+Device: 8,48	Inode: 49363       Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/   maksy)   Gid: ( 1000/   maksy)
+Access: 2026-09-23 12:51:00.797040708 +0300
+Modify: 2026-09-23 12:47:36.597064422 +0300
+Change: 2026-09-23 12:49:39.473223692 +0300
+ Birth: 2026-09-23 12:47:36.592347714 +0300
